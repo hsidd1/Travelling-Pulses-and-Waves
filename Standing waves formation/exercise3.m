@@ -12,7 +12,7 @@ w = 2*pi*f;           % omega value for frequency
 lambda = vp/f;        % wave length
 % spatial and temporal axes
 dz = lambda; z = linspace(-3*dz, +3*dz, 1001);
-dt = 1/f; t = linspace(-3*dt, +3*dt, 3001); % using T = 1/f
+dt = 1/f; t = linspace(-3*dt, +6*dt, 4501); % using T = 1/f
 
 % function for sinusoidal wave
 sigmoid = @(x) (1+erf(x))/2; %sigmoid function - transitions smoothly as opposed to Heaviside unit step function 
